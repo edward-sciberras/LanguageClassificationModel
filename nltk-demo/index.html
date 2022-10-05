@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en" wtx-context="CA28D030-B86A-4232-8713-18F0868FF625">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NLTK Demo</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+        integrity="sha256-H0KfTigpUV+0/5tn2HXC0CPwhhDhWgSawJdnFd0CGCo=" rel="stylesheet" crossorigin="anonymous">
+    
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>NLTK Demo</h1>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <p class="">Please enter an English sentence and press the <b>"Process"</b> button to allow the website
+                    to process the
+                    sentence.</p>
+                <div id="form">
+                    <div class="form-group">
+                        <label for="text" class="">Text:</label>
+                        <br>
+                        <textarea class="form-control show-edit" rows="3" id="inpField1"
+                            spellcheck="false">Please type your sentence here.</textarea>
+                    </div>
+
+                    <div class="output"></div>
+
+                    <br><br>
+
+                    <div class="btn-toolbar" role="toolbar">
+                        <button onclick="postFieldDatatoOurServer ()" type="button" class="btn btn-default show-edit" id="submit"><span
+                                class="glyphicon glyphicon-ok"></span> Process</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <div id="colors">
+                    <div class="tagAdjective">Adjective</div>
+                    <div class="tagAdverb">Adverb</div>
+                    <div class="tagConjunction">Conjunction</div>
+                    <div class="tagDeterminer">Determiner</div>
+                    <div class="tagNoun">Noun</div>
+                    <div class="tagNumber">Number</div>
+                    <div class="tagPreposition">Preposition</div>
+                    <div class="tagPronoun">Pronoun</div>
+                    <div class="tagVerb">Verb</div>
+                </div>
+            </div>
+        </div><!-- /row -->
+        <hr>
+    </div><!-- /container -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"
+        integrity="sha256-kJrlY+s09+QoWjpkOrXXwhxeaoDz9FW5SaxF8I0DibQ=" crossorigin="anonymous"></script>
+
+    <script type ="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
