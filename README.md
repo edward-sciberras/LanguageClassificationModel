@@ -1,0 +1,2 @@
+# Language Classification Model Website
+A website that takes an English sentence as an input and the Python back-end will organise the sentence and return all the words attached with what type of word they are.
